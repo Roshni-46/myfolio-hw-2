@@ -1,0 +1,245 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin:0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+     font-family: 'Open Sans', sans-serif;;
+}
+.align-center{
+    align-items: center;
+}
+
+.button{
+    width: 148px;
+    height: 48px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    background-color: #cfc91d;
+    line-height: 48px;
+    color: black;
+    font-weight: 800;
+    transition: .3s;
+}
+.button:hover{
+    background-color: #02918c;
+    color: white;
+}
+.head{
+    color: #02918c;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+   text-align: center;
+   position: relative;
+}
+ .head::after{
+    content: '';
+    width: 162px;
+    height: 9px;
+    background-image: url(../images/project-1\(A\)-MYFOLIO-\(3\).png);
+    bottom: -50px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+ .head2{
+    color: #b8babd;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 32px 0 0 0;
+}
+ .about-text{
+    padding: 32px 0 54px 0;
+    color: #b8babd;
+    line-height: 15px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 400;
+}
+ .about-icon {
+    padding: 32px 0;
+    color: #02918c;
+    font-size: 25px;
+}
+/* basic css ends here */
+/* nav bar starts here */
+nav{
+    background-color:#02918c;
+}
+nav .logo{
+    width: 30%;
+}
+nav .menu{
+    width: 70%;
+}
+nav .menu ul{
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+color: white;
+font-size: 12px;
+font-weight: 800; 
+display: block;
+padding: 26px 25px;
+text-transform: uppercase;
+}
+nav .menu ul li:hover a{
+    color: black;
+    background-color: #cfc91d;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+/* nav ends here */
+/* banner starts here */
+#banner{
+    background-image: url(../images/BANNER.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 720px;
+    background-position: center  !important;
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+#banner::before{
+    content: "";
+    width:100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.34);
+    position: absolute;
+    z-index: -1;
+}
+#banner .row{
+    height: 720px;
+}
+ .banner-item{
+    text-align: center;
+    color:white;
+    width: 100%;
+}
+.banner-item h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.banner-item h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+   letter-spacing: 30px;
+}
+.banner-item p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.banner-item img{
+    margin: 50px 0;
+}
+
+/* banner ends here */
+/* about starts here */
+#about{
+    margin-bottom: 95px;
+}
+#about .about-item{
+    text-align: center;
+    margin: 96px 0;
+}
+
+.about-item p{
+    color: #9da0a3;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 70px;
+    text-align: center;
+}
+.about-item p span{
+    color: #7e8287;
+    font-size: 23px;
+}
+.about-info{
+    text-align: center;
+    width: 25%;
+    border-right: 1px solid #b8babd;
+    padding-bottom: 96px 0;
+    
+}
+.about-info:last-child{
+    border: none;
+}
+
+
+
+/* about end here */
+/* service starts here */
+#service{
+    background-image: url(../images/service.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: cover;
+    padding: 96px 0;
+
+   
+}
+
+#service .head{
+    text-align: left;
+}
+#service .head::after{
+    left: 0;
+    transform: translateX(-0%);
+}
+ .service{
+    width: 50%;
+}
+.service-card{
+    width: 50%;
+  
+    text-align: left;
+}
+.service-card p{
+ text-align: left;   
+
+}
+#service p{
+   padding: 34px 0 55px 0;
+   color: #9da0a3;
+   font-weight: 400;
+}
+/* service ends here */
+/* my work start here */
+#work p{
+font-size: 16px;
+line-height: 26px;}
+.workcard{
+    width: 25%;
+}
+.workcard img{
+    width: 100%;
+    display: block;
+}
+#work{
+    padding: 90px 0;
+}
+/* my work end here */
